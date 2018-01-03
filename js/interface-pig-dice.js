@@ -1,5 +1,6 @@
 // FRONT END
 var pigDice = require('./../js/pig-dice.js').pigDiceModule;
+
 $(function(){ // greater function
   var pigDice = {};
   var hallOfFame = [];
