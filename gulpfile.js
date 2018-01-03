@@ -30,7 +30,7 @@ gulp.task('jshint', function(){
 });
 
 gulp.task('concatInterface', function() {
-  return gulp.src(['./js/*-interface.js'])
+  return gulp.src(['js/*-interface.js'])
   .pipe(concat('allConcat.js'))
   .pipe(gulp.dest('./tmp'));
 });
@@ -109,6 +109,6 @@ gulp.task('cssBuild', ['bower'], function(){
   .pipe(sourcemaps.init())
   .pipe(sass())
   .pipe(sourcemaps.write())
-  .pipe(gulp.dest('/build/css'))
+  .pipe(gulp.dest('./build/css'))
   .pipe(browserSync.stream());
 });

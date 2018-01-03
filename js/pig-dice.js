@@ -59,4 +59,8 @@ function playGame(pigDice){
   }
   return pigDice;
 }
-exports.pigDiceModule = pigDice;
+exports.pigDiceModule = PigDice;
+exports.playerModule = Player;
+exports.hallOfFameWinnerModule = HallOfFameWinner;
+exports.endTurnModule = endTurn;
+exports.playGameModule = playGame;

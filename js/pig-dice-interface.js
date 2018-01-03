@@ -1,5 +1,9 @@
 // FRONT END
-var pigDice = require('./../js/pig-dice.js').pigDiceModule;
+var PigDice = require('./../js/pig-dice.js').pigDiceModule;
+var Player = require('./../js/pig-dice.js').playerModule;
+var HallOfFameWinner = require('./../js/pig-dice.js').hallOfFameWinnerModule;
+var endTurn = require('./../js/pig-dice.js').endTurnModule;
+var playGame = require('./../js/pig-dice.js').playGameModule;
 
 $(function(){ // greater function
   var pigDice = {};
