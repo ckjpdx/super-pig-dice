@@ -1,10 +1,15 @@
 var PigDice = require('./../js/pig-dice.js').pigDiceModule;
 
-describe('rollDice', function() {
+describe('PigDice', function() {
 
   it('should test to see if a random number is generated', function() {
-    var pigDice = new PigDice;
-    var numberToCheck =
-    expect(pigDice.rollDice()).toEqual(jasmine.any(Number));
+    var pigDice = new PigDice();
+    pigDice.rollDice();
+    expect(pigDice.roll).toEqual(jasmine.any(Number));
   });
+
+  it('should pass a test', function(){
+    expect(5).toEqual(5);
+  });
+
 });

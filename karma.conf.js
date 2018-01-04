@@ -7,13 +7,13 @@ module.exports = function(config) {
     frameworks: ['jquery-3.2.1', 'jasmine', 'browserify'],
     files: [
       'js/*.js',
-      'spec/*-spec.js',
+      'spec/*-spec.js'
     ],
     exclude: [
     ],
     preprocessors: {
       'js/*.js': [ 'browserify'],
-      'spec/*.js': ['browserify'],
+      'spec/*.js': ['browserify']
     },
     plugins: [
       'karma-jquery',
